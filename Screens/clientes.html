@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header class="header-clientes">
+        <h1 class="titulo">Clientes</h1>
+    </header>
+    <div class="contenido-clientes">
+        <div class="tabla-clientes">
+            <input type="text">
+            <table border="bordeada">
+                <tr>
+                    <th>id</th>
+                    <th>Nombre del Perro</th>
+                    <th>Nombre del dueño</th>
+                </tr>
+                <tr>
+                    <td>154786</td>
+                    <td>Tobi</td>
+                    <td>Pepe aguilar</td>
+                </tr>
+            </table>
+        </div>
+        <div class="btn-clientes-contenedor">
+            <button class="acceder" onclick="altaClientes()">Alta</button>
+            <button class="acceder" >Editar</button>
+            <button class="acceder" >Eliminar</button>
+        </div>
+        <button class="btn-salir-menu" onclick="volverMenu()" >Volver</button>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

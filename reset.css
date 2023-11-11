@@ -1,0 +1,57 @@
+/* Reset CSS básico */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Corrige el problema de espaciado en algunos navegadores */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Corrige los estilos de fuente y espaciado en IE 8 y anteriores */
+font {
+    vertical-align: inherit;
+}
+
+/* Normaliza la configuración de fuentes para la representación uniforme en todos los navegadores */
+body {
+    line-height: 1;
+}
+
+/* Elimina el borde de la tabla en IE 8 y anteriores */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+label {
+    font-size: 30px;
+}
+
+/* Añade borde a la tabla */
+table.bordeada {
+    border: 1px solid #000; /* Puedes ajustar el color y el grosor del borde según tus preferencias */
+}

@@ -11,45 +11,47 @@
     <title>Alta de Clientes</title>
 </head>
 <body>
-    <header class="header-clientes">
+    <header class="header-general">
         <h1 class="titulo">Alta de Clientes</h1>
     </header>
-    <div class="contenido-clientes">
-        <form action="">
+    <div class="contenido-clientes-alta">
+        <form action="" class="contenido-alta-inputs">
             <diV>
                 <label>Nombre del dueño: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Adriana Mendoza">
             </diV>
             <diV>
                 <label>Telefono: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="8156947864">
             </diV>
             <diV>
                 <label>Correo: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="AdrianaMendoza@gmail.com">
             </diV>
             <diV>
                 <label>Nombre del perro: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Tobi">
             </diV>
             <diV>
                 <label>Raza: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Pastor aleman">
             </diV>
             <diV>
                 <label>Edad: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="5 años">
             </diV>
             <diV>
                 <label>Discapacidad / Rasgo distintivo: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="heterocromia">
             </diV>
             <diV>
                 <label>¿Es alergico a algun producto quimico? Mencionelo: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Si, paracetamol">
             </diV>
-            <button onclick="volverClientes()" type="button">Volver</button>
-            <button type="submit">Dar de alta</button>
+            <div class="contenido-alta-btns">
+                <button type="button" class="btn-salir" onclick="volverClientes()">Volver</button>
+                <button type="submit" class="acceder" onclick="volverClientes()">Dar de alta</button>
+            </div>
         </form>
     </div>
     <script src="../script.js"></script>

@@ -11,33 +11,35 @@
     <title>Alta de empleados</title>
 </head>
 <body>
-    <header class="header-clientes">
+    <header class="header-general">
         <h1 class="titulo">Alta de Empleados</h1>
     </header>
-    <div class="contenido-clientes">
-        <form action="">
+    <div class="contenido-empleados-alta">
+        <form action="" class="contenido-alta-inputs">
             <diV>
                 <label>Nombre completo: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Juan Augusto Contreras">
             </diV>
             <diV>
                 <label>Edad: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="30 años">
             </diV>
             <diV>
                 <label>Direccion: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Tepeyac 205">
             </diV>
             <diV>
                 <label>Telefono: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="8156497852">
             </diV>
             <diV>
                 <label>Correo: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="JuanAugusto@gmail.com">
             </diV>
-            <button onclick="volverEmpleados()" type="button">Volver</button>
-            <button type="submit">Dar de alta</button>
+            <div class="contenido-alta-btns">
+                <button type="button" class="btn-salir" onclick="volverEmpleados()">Volver</button>
+                <button type="submit" class="acceder" onclick="volverEmpleados()">Dar de alta</button>
+            </div>
         </form>
     </div>
     <script src="../script.js"></script>

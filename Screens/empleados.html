@@ -11,31 +11,35 @@
     <title>Empleados</title>
 </head>
 <body>
-    <header class="header-clientes">
+    <header class="header-general">
         <h1 class="titulo">Empleados</h1>
     </header>
-    <div class="contenido-clientes">
-        <div class="tabla-clientes">
-            <input type="text">
+    <div class="contenido-empleados">
+        <div class="tabla-general">
+            <input type="text" class="buscador-citas">
             <table border="bordeada">
                 <tr>
                     <th>id</th>
                     <th>Nombre</th>
-                    <th>telefono</th>
+                    <th>Dirección</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
                 </tr>
                 <tr>
-                    <td>154786</td>
-                    <td>Pepe Aguilar</td>
-                    <td>8123786147</td>
+                    <td>1871004</td>
+                    <td>Javier Enrique Henandez Olvera</td>
+                    <td>Queretaro 905A</td>
+                    <td>8123456813</td>
+                    <td>JavierEnrique@gmail.com</td>
                 </tr>
             </table>
         </div>
-        <div class="btn-clientes-contenedor">
+        <div class="contenedor_btn">
             <button class="acceder" onclick="altaEmpleados()">Alta</button>
             <button class="acceder">Editar</button>
             <button class="acceder">Eliminar</button>
         </div>
-        <button class="btn-salir-menu" onclick="volverMenu()">Volver</button>
+        <button class="btn-salir" onclick="volverMenu()">Volver</button>
     </div>
     <script src="../script.js"></script>
 </body>

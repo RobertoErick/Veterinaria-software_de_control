@@ -11,39 +11,48 @@
     <title>Alta de cita</title>
 </head>
 <body>
-    <header class="header-alta-citas">
+    <header class="header-general">
         <h1 class="titulo">Alta de cita</h1>
     </header>
     <div class="contenido-alta">
-        <div>
+        <form action="" class="contenido-alta-inputs">
             <div>
                 <label>Id:</label>
-                <input type="text" placeholder="1871004">
+                <input type="text" name="" id="" placeholder="1871004">
             </div>
             <div>
-                <label>Nombre:</label>
-                <input type="text" placeholder="Tobi">
+                <label>Nombre de la mascota:</label>
+                <input type="text" name="" id="" placeholder="Tobi">
             </div>
             <div>
-                <label>Dueño del perro:</label>
-                <input type="text" placeholder="1871004">
+                <label>Dueño:</label>
+                <input type="text" name="" id="" placeholder="Adriana Mendoza">
             </div>
             <div>
-                <label>Costo: </label>
-                <input type="text" placeholder="1871004">
+                <label>Entrada: </label>
+                <input type="time" name="" id="">
             </div>
-            <p></p>
-            <p>Hora de entrada</p>
-            <p>Hora de salida</p>
-            <p>Baño</p>
-            <p>Corte de pelo</p>
-            <p>Corte de garras</p>
-            <p>Total: </p>
-        </div>
-        <div>
-            <button onclick="volverCitas()">Volver</button>
-            <button onclick="volverCitas()">Alta</button>
-        </div>
+            <div>
+                <label>Salida: </label>
+                <input type="time" name="" id="">
+            </div>
+            <div>
+                <label>Servicio: </label>
+                <Select>
+                    <option value="0">Seleccione opción</option>
+                    <option value="1">Baño</option>
+                    <option value="2">Corte de pelo</option>
+                    <option value="3">Corte de garras</option>
+                </Select>
+            </div>
+            <div>
+                <label>Total: </label>
+            </div>
+            <div class="contenido-alta-btns">
+                <button type="button" class="btn-salir" onclick="volverCitas()">Volver</button>
+                <button type="submit" class="acceder" onclick="volverCitas()">Alta</button>
+            </div>
+        </form>
     </div>
     <script src="../script.js"></script>
 </body>

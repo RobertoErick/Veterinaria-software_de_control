@@ -1,3 +1,74 @@
+/* General */
+.titulo{
+    text-align: center;
+    font-size: 35px;
+}
+
+.acceder{
+    background-color: rgb(78, 121, 214);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.acceder:hover{
+    background-color: rgb(12, 43, 110);
+    transition: 0.5s;
+}
+
+.btn-salir{
+    border-radius: 20px;
+    padding: 0 25px 0 25px;
+    cursor: pointer;
+}
+
+.header-general{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(179, 202, 250);
+    position: fixed;
+}
+
+.contenedor_btn{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+.tabla-general{
+    width: 65%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.buscador-general{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenido-alta-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 20px;
+}
+
+.contenido-alta-btns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* pagina index */
 .contenedor_index{
     background-image: url('./img/Foto-Login.jpg');
     background-size: cover;
@@ -20,11 +91,6 @@
     -moz-box-shadow: 21px 17px 21px -1px rgba(0,0,0,0.5);
 }
 
-.titulo{
-    text-align: center;
-    font-size: 35px;
-}
-
 .login-input{
     width: 100%;
     border-radius: 20px;
@@ -41,21 +107,7 @@
     box-sizing: border-box;
 }
 
-.acceder{
-    background-color: rgb(78, 121, 214);
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-}
-
-.acceder:hover{
-    background-color: rgb(12, 43, 110);
-    transition: 0.5s;
-}
-
 /* Pagina de menu principal */
-
 .header-menu{
     display: flex;
     justify-content: flex-start;
@@ -64,12 +116,6 @@
     padding: 20px;
     background-color: rgb(179, 202, 250);
     position: fixed;
-}
-
-.btn-salir-menu{
-    border-radius: 20px;
-    padding: 0 25px 0 25px;
-    cursor: pointer;
 }
 
 .contenido-menu{
@@ -104,16 +150,6 @@
 }
 
 /* Pagina citas */
-
-.header-citas{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    background-color: rgb(179, 202, 250);
-    position: fixed;
-}
-
 .contenido-citas{
     display: flex;
     align-items: center;
@@ -121,62 +157,20 @@
     height: 100vh;
     padding: 0 20px 0 20px;
     flex-wrap: wrap;
-}
-
-.tabla-citas{
-    width: 65%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-}
-
-table{
-    width: 100%;
-}
-
-.buscador-citas{
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.btn-citas-contenedor{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 20px;
+    background-image: url("./img/Foto-Citas.jpg");
 }
 
 /* alta de las citas */
-
-.header-alta-citas{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    background-color: rgb(179, 202, 250);
-    position: fixed;
-}
-
 .contenido-alta{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    background-image: url("./img/Foto-Citas-Alta.jpg");
 }
 
 /* Pagina de clientes */
-.header-clientes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    background-color: rgb(179, 202, 250);
-    position: fixed;
-}
-
 .contenido-clientes{
     display: flex;
     align-items: center;
@@ -184,20 +178,42 @@ table{
     height: 100vh;
     padding: 0 20px 0 20px;
     flex-wrap: wrap;
+    background-image: url("./img/Foto-Clientes.jpg");
 }
 
-.tabla-clientes{
-    width: 65%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+.clientes td{
+    font-size: 20px;
 }
 
-.btn-clientes-contenedor{
+/* alta de clientes */
+.contenido-clientes-alta{
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+    background-image: url("./img/Foto-Clientes-Alta.jpg");
+}
+
+/* pagina empleados */
+.contenido-empleados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+    background-image: url("./img/Foto-Veterinario.jpg");
+}
+
+/* alta de empleados */
+.contenido-empleados-alta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+    background-image: url("./img/Foto-Empleados-Alta.png");
 }

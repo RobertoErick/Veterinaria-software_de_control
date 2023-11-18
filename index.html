@@ -14,19 +14,19 @@
     <div class="contenedor_index">
         <div class="login-contenedor">
             <h1 class="titulo">Login</h1>
-            <form class="login-formulario" action="./Screens/menu_inicial.html">
+            <form class="login-formulario" data-form>
                 <div>
                     <label>Correo:</label>
-                    <input type="email" class="login-input" placeholder="juanito_alcachofa@empresa.com"/>
+                    <input type="email" class="login-input" placeholder="juanito_alcachofa@empresa.com" id="correo"/>
                 </div>
                 <div>
                     <label>Contraseña: </label>
-                    <input type="password" class="login-input"placeholder="*****"/>
+                    <input type="password" class="login-input" placeholder="*****" id="contraseña"/>
                 </div>
                 <button type="submit" class="acceder">Ingresar</button> 
             </form>   
         </div>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./controllers/Login.js"></script>
 </body>
 </html>

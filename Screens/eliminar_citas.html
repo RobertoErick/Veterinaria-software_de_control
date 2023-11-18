@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
-    <title>Citas</title>
+    <title>Eliminar Citas</title>
 </head>
 <body>
     <header class="header-general">
-        <h1 class="titulo">Citas</h1>
+        <h1 class="titulo">Eliminar Citas</h1>
     </header>
     <div class="contenido-citas">
-        <div class="tabla-general">
+        <div class="tabla-general-editar_eliminar">
             <input type="text" class="buscador-citas">
             <table border="bordeada" class="tabla-citas">
                 <tr>
@@ -26,16 +26,12 @@
                     <th>Salida</th>
                     <th>Servicio</th>
                     <th>Costo</th>
+                    <th>Accion</th>
                 </tr>
             </table>
         </div>
-        <div class="contenedor_btn">
-            <button class="acceder" id="alta">Alta</button>
-            <button class="acceder" id="editar">Editar</button>
-            <button class="acceder" id="eliminar">Eliminar</button>
-        </div>
     <button class="btn-salir" id="volver">Volver</button>
     </div>
-    <script type="module" src="../controllers/Citas_Totales_controllers.js"></script>
+    <script type="module" src="../controllers/Citas_Eliminar_controllers.js"></script>
 </body>
 </html>

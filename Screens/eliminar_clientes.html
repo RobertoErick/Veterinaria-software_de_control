@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
-    <title>Clientes</title>
+    <title>Eliminar Clientes</title>
 </head>
 <body>
     <header class="header-general">
-        <h1 class="titulo">Clientes</h1>
+        <h1 class="titulo">Eliminar Clientes</h1>
     </header>
     <div class="contenido-clientes">
-        <div class="tabla-general">
+        <div class="tabla-general-editar_eliminar">
             <input type="text" class="buscador-citas">
             <table border="bordeada" class="tabla-clientes">
                 <tr>
@@ -28,16 +28,12 @@
                     <th>Edad</th>
                     <th>Discapacidad / Rasgo distintivo</th>
                     <th>Alergico</th>
+                    <th>Accion</th>
                 </tr>
             </table>
         </div>
-        <div class="contenedor_btn">
-            <button class="acceder" id="alta">Alta</button>
-            <button class="acceder" id="editar">Editar</button>
-            <button class="acceder" id="eliminar">Eliminar</button>
-        </div>
-        <button class="btn-salir" id="volver" >Volver</button>
+        <button class="btn-salir" id="volver">Volver</button>
     </div>
-    <script type="module" src="../controllers/Clientes_Totales_Controllers.js"></script>
+    <script type="module" src="../controllers/Clientes_Eliminar_Controllers.js"></script>
 </body>
 </html>

@@ -8,31 +8,44 @@
   ],
   "citas": [
     {
-      "id": "1246785",
+      "id": "4567894",
+      "mascota": "tilin",
+      "dueño": "Jose Arenas",
+      "empleado": "Marco Aurelio",
+      "entrada": "08:12",
+      "salida": "22:12",
+      "servicio": "Baño",
+      "total": 20
+    },
+    {
+      "id": "456789",
+      "mascota": "tilin",
+      "dueño": "Jose Arenas",
+      "empleado": "Luis aguilar",
+      "entrada": "07:52",
+      "salida": "20:54",
+      "servicio": "Corte de pelo",
+      "total": 15
+    },
+    {
+      "id": "794685",
+      "mascota": "Copo",
+      "dueño": "Andres Valle",
+      "empleado": "Marco Aurelio",
+      "entrada": "09:53",
+      "salida": "10:53",
+      "servicio": "Baño",
+      "total": 20
+    },
+    {
+      "id": "79134658",
       "mascota": "Tobi",
-      "dueño": "Juan Jose",
-      "entrada": "08:00",
-      "salida": "09:00",
-      "servicio": "Baño",
-      "total": 20
-    },
-    {
-      "id": "1623457",
-      "mascota": "Princesa",
-      "dueño": "Ana Maria",
-      "entrada": "00:00",
-      "salida": "13:00",
-      "servicio": "Baño",
-      "total": 20
-    },
-    {
-      "id": "4567215",
-      "mascota": "Morty",
-      "dueño": "Cesar Ivan",
-      "entrada": "15:40",
-      "salida": "16:30",
-      "servicio": "Baño",
-      "total": 20
+      "dueño": "Adriana Mendoza",
+      "empleado": "Rogelio Hernan",
+      "entrada": "12:06",
+      "salida": "13:06",
+      "servicio": "Corte de garras",
+      "total": 10
     }
   ],
   "clientes": [
@@ -48,12 +61,37 @@
       "id": 1
     },
     {
-      "id": 2,
-      "nombre": "Luis aguilar",
-      "edad": "26 años",
-      "direccion": "Colima 105",
+      "dueño": "Jose Arenas",
       "telefono": "8156794685",
-      "correo": "LuisAguilar@gmail.com"
+      "correo": "JoseArenas@gmail.com",
+      "mascota": "tilin",
+      "raza": "Golden Retriever",
+      "edad": "3 años",
+      "rasgo": "machas cafes",
+      "alergia": "No",
+      "id": 2
+    },
+    {
+      "dueño": "Ximena Rodriguez",
+      "telefono": "8123567946",
+      "correo": "XimenaRodriguez@gmail.com",
+      "mascota": "Bobi",
+      "raza": "Pug",
+      "edad": "4 años",
+      "rasgo": "cola lastimada",
+      "alergia": "Avilamicina",
+      "id": 3
+    },
+    {
+      "dueño": "Andres Valle",
+      "telefono": "8156798465",
+      "correo": "AndresV@gmail.com",
+      "mascota": "Copo",
+      "raza": "Pitbull",
+      "edad": "2 años",
+      "rasgo": "orejas cortadas",
+      "alergia": "No",
+      "id": 4
     }
   ],
   "empleados": [

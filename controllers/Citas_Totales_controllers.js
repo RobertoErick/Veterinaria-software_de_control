@@ -29,12 +29,13 @@ const btnVolver = document.querySelector("#volver");
 btnVolver.addEventListener("click", () => {volverMenu()});
 
 
-const citas = (id, mascota, dueño, entrada, salida, servicio, total) => {
+const citas = (id, mascota, empleado, dueño, entrada, salida, servicio, total) => {
     const citasTr = document.createElement("tr");
 
     const contenido = `
             <td>${id}</td>
             <td>${mascota}</td>
+            <td>${empleado}</td>
             <td>${dueño}</td>
             <td>${entrada}</td>
             <td>${salida}</td>
@@ -49,8 +50,8 @@ const citas = (id, mascota, dueño, entrada, salida, servicio, total) => {
 const tabla = document.querySelector(".tabla-citas");
 
 clientServices.listaCitas().then((data) => {
-    data.forEach(({id, mascota, dueño, entrada, salida, servicio, total}) => {
-        const nuevaFila = citas(id, mascota, dueño, entrada, salida, servicio, total);
+    data.forEach(({id, mascota, empleado, dueño, entrada, salida, servicio, total}) => {
+        const nuevaFila = citas(id, mascota, empleado, dueño, entrada, salida, servicio, total);
         tabla.appendChild(nuevaFila);
     });
 }).catch((error) => alert("Ocurrio un error"));

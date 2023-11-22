@@ -52,14 +52,14 @@ formulario.addEventListener("submit", (event) => {
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
 
-    const dueño = document.querySelector("[data-mascota]").value;
-    const telefono = document.querySelector("[data-dueño]").value;
-    const correo = document.querySelector("[data-entrada]").value;
-    const mascota = document.querySelector("[data-salida]").value;
-    const raza = document.querySelector("[data-servicio]").value;
-    const edad = document.querySelector("[data-servicio]").value;
-    const rasgo = document.querySelector("[data-salida]").value;
-    const alergia = document.querySelector("[data-servicio]").value;
+    const dueño = document.querySelector("[data-dueño]").value;
+    const telefono = document.querySelector("[data-telefono]").value;
+    const correo = document.querySelector("[data-correo]").value;
+    const mascota = document.querySelector("[data-mascota]").value;
+    const raza = document.querySelector("[data-raza]").value;
+    const edad = document.querySelector("[data-edad]").value;
+    const rasgo = document.querySelector("[data-rasgo]").value;
+    const alergia = document.querySelector("[data-alergia]").value;
 
     clientServices
         .actualizarCliente(id, dueño, telefono, correo, mascota, raza, edad, rasgo, alergia)

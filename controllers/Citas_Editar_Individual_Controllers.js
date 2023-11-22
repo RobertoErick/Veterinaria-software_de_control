@@ -190,7 +190,7 @@ formulario.addEventListener("submit", (event) => {
     event.preventDefault();
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
-
+    
     const mascota = document.querySelector("[data-mascota]").value;
     const dueño = document.querySelector("[data-dueño]").value;
     const empleado = document.querySelector("[data-empleado]").value;

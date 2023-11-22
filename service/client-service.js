@@ -1,17 +1,17 @@
-const listaUsuarios = () => fetch("https://fake-api-veterinaria.vercel.app/usuarios").then((respuesta) => respuesta.json());
+const listaUsuarios = () => fetch("http://localhost:3000/usuarios").then((respuesta) => respuesta.json());
 
-const listaCitas = () => fetch("https://fake-api-veterinaria.vercel.app/citas").then((respuesta) => respuesta.json());
+const listaCitas = () => fetch("http://localhost:3000/citas").then((respuesta) => respuesta.json());
 
-const listaClientes = () => fetch("https://fake-api-veterinaria.vercel.app/clientes").then((respuesta) => respuesta.json());
+const listaClientes = () => fetch("http://localhost:3000/clientes").then((respuesta) => respuesta.json());
 
-const listaEmpleados = () => fetch("https://fake-api-veterinaria.vercel.app/empleados").then((respuesta) => respuesta.json());
+const listaEmpleados = () => fetch("http://localhost:3000/empleados").then((respuesta) => respuesta.json());
 
 const listaMascotasPorCliente = (clienteId) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/clientes?dueño=${clienteId}`).then((respuesta) => respuesta.json());
+    return fetch(`http://localhost:3000/clientes?dueño=${clienteId}`).then((respuesta) => respuesta.json());
 };
 
 const crearCita = (id, mascota, dueño, empleado, entrada, salida, servicio, total) => {
-    return fetch("https://fake-api-veterinaria.vercel.app/citas", {
+    return fetch("http://localhost:3000/citas", {
         method: "POST",
         headers:{
             "Content-Type": "application/json",
@@ -21,7 +21,7 @@ const crearCita = (id, mascota, dueño, empleado, entrada, salida, servicio, tot
 };
 
 const crearCliente = (dueño, telefono, correo, mascota, raza, edad, rasgo, alergia) => {
-    return fetch("https://fake-api-veterinaria.vercel.app/clientes", {
+    return fetch("http://localhost:3000/clientes", {
         method: "POST",
         headers:{
             "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const crearCliente = (dueño, telefono, correo, mascota, raza, edad, rasgo, aler
 };
 
 const crearEmpleado = (nombre, edad, direccion, telefono, correo) => {
-    return fetch("https://fake-api-veterinaria.vercel.app/empleados", {
+    return fetch("http://localhost:3000/empleados", {
         method: "POST",
         headers:{
             "Content-Type": "application/json",
@@ -41,25 +41,25 @@ const crearEmpleado = (nombre, edad, direccion, telefono, correo) => {
 };
 
 const detalleCita = (id) => {
-    return fetch (`https://fake-api-veterinaria.vercel.app/citas/${id}`).then((respuesta) => 
+    return fetch (`http://localhost:3000/citas/${id}`).then((respuesta) => 
         respuesta.json()
     );
 };
 
 const detalleCliente = (id) => {
-    return fetch (`https://fake-api-veterinaria.vercel.app/clientes/${id}`).then((respuesta) => 
+    return fetch (`http://localhost:3000/clientes/${id}`).then((respuesta) => 
         respuesta.json()
     );
 };
 
 const detalleEmpleado = (id) => {
-    return fetch (`https://fake-api-veterinaria.vercel.app/empleados/${id}`).then((respuesta) => 
+    return fetch (`http://localhost:3000/empleados/${id}`).then((respuesta) => 
         respuesta.json()
     );
 };
 
 const actualizarCita = (id, mascota, dueño, empleado, entrada, salida, servicio, total) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/citas/${id}`, {
+    return fetch(`http://localhost:3000/citas/${id}`, {
         method: "PUT",
         headers:{
             "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const actualizarCita = (id, mascota, dueño, empleado, entrada, salida, servicio
 };
 
 const actualizarCliente = (id, dueño, telefono, correo, mascota, raza, edad, rasgo, alergia) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/clientes/${id}`, {
+    return fetch(`http://localhost:3000/clientes/${id}`, {
         method: "PUT",
         headers:{
             "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const actualizarCliente = (id, dueño, telefono, correo, mascota, raza, edad, ra
 };
 
 const actualizarEmpleado = (id, nombre, edad, direccion, telefono, correo) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/empleados/${id}`, {
+    return fetch(`http://localhost:3000/empleados/${id}`, {
         method: "PUT",
         headers:{
             "Content-Type": "application/json",
@@ -95,19 +95,19 @@ const actualizarEmpleado = (id, nombre, edad, direccion, telefono, correo) => {
 };
 
 const eliminarCita = (id) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/citas/${id}`, {
+    return fetch(`http://localhost:3000/citas/${id}`, {
         method: "DELETE"
     })
 };
 
 const eliminarCliente = (id) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/clientes/${id}`, {
+    return fetch(`http://localhost:3000/clientes/${id}`, {
         method: "DELETE"
     })
 };
 
 const eliminarEmpleado = (id) => {
-    return fetch(`https://fake-api-veterinaria.vercel.app/empleados/${id}`, {
+    return fetch(`http://localhost:3000/empleados/${id}`, {
         method: "DELETE"
     })
 };

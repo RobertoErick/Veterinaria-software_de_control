@@ -203,5 +203,6 @@ formulario.addEventListener("submit", (event) => {
         .actualizarCita(id, mascota, dueño, empleado, entrada, salida, servicio, total)
         .then(() => {
             window.location.href = "../Screens/citas.html";
+            alert("Cita editada con exito");
         });
 });

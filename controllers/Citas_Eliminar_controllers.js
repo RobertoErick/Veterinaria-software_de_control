@@ -27,6 +27,7 @@ const citas = (id, mascota, dueño, entrada, salida, servicio, total) => {
     eliminar.addEventListener("click", () => {
         const id = eliminar.id;
         clientServices.eliminarCita(id).then((respuesta) => {
+            alert("Cita eliminada con exito");
             console.log(respuesta)
         })
         // .catch((err) => alert("Ocurrio un error"));

@@ -46,6 +46,16 @@
       "salida": "17:16",
       "servicio": "Baño",
       "total": 20
+    },
+    {
+      "id": "15647",
+      "mascota": "tilin",
+      "dueño": "Jose Arenas",
+      "empleado": "Luis aguilar",
+      "entrada": "17:17",
+      "salida": "17:17",
+      "servicio": "Baño",
+      "total": 20
     }
   ],
   "clientes": [

@@ -29,6 +29,7 @@ const clientes = (id, dueño, telefono, correo, mascota, raza, edad, rasgo, aler
     eliminar.addEventListener("click", () => {
         const id = eliminar.id;
         clientServices.eliminarCliente(id).then((respuesta) => {
+            alert("Cliente eliminado con exito");
             console.log(respuesta)
         })
         .catch((err) => alert("Ocurrio un error"));

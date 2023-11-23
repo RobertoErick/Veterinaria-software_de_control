@@ -25,6 +25,7 @@ formulario.addEventListener("submit", (event) => {
         .crearCliente(dueño, telefono, correo, mascota, raza, edad, rasgo, alergia)
         .then(() => {
             window.location.href = "../Screens/clientes.html";
+            alert("Cliente creado con exito");
         })
         .catch((err) => console.log(err));
 });

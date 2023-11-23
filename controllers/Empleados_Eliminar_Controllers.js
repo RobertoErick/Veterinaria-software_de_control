@@ -27,6 +27,7 @@ const empleados = (id, nombre, edad, direccion, telefono, correo) => {
         const id = eliminar.id;
         clientServices.eliminarEmpleado(id).then((respuesta) => {
             console.log(respuesta)
+            alert("Empleado eliminado con exito");
         })
         .catch((err) => alert("Ocurrio un error"));
     });

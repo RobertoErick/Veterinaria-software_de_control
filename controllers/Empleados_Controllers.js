@@ -22,6 +22,7 @@ formulario.addEventListener("submit", (event) => {
         .crearEmpleado(nombre, edad, direccion, telefono, correo)
         .then(() => {
             window.location.href = "../Screens/empleados.html";
+            alert("Empleado creado con exito");
         })
         .catch((err) => console.log(err));
 });

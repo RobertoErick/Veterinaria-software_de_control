@@ -65,5 +65,6 @@ formulario.addEventListener("submit", (event) => {
         .actualizarCliente(id, dueño, telefono, correo, mascota, raza, edad, rasgo, alergia)
         .then(() => {
             window.location.href = "../Screens/clientes.html";
+            alert("cliente editado con exito");
         });
 });

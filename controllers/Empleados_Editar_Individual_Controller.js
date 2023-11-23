@@ -56,5 +56,6 @@ formulario.addEventListener("submit", (event) => {
         .actualizarEmpleado(id, nombre, edad, direccion, telefono, correo)
         .then(() => {
             window.location.href = "../Screens/editar_empleados.html";
+            alert("Empleado editado con exito");
         });
 });

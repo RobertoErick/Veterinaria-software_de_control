@@ -142,6 +142,8 @@ formulario.addEventListener("submit", (event) => {
         .crearCita(id, mascota, dueño, empleado, entrada, salida, servicio, total)
         .then(() => {
             window.location.href = "../Screens/citas.html";
+            // Alerta cuando la cita se crea exitosamente
+            alert("Cita creada exitosamente");
         })
         .catch((err) => console.log(err));
 });
